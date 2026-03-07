@@ -1,4 +1,4 @@
-name: Potty
+name: PottyTracker
 options:
   bundleIdPrefix: com.ryanjadhav
   deploymentTarget:

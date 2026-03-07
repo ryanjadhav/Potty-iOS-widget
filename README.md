@@ -1,4 +1,4 @@
-# Potty
+# Potty Tracker
 
 A simple iOS app and home screen widget for tracking your toddler's potty training. Log pee and poop events with one tap, view a timer since the last event, and get reminders — all from the home screen widget or the app.
 
@@ -32,17 +32,17 @@ cd Potty-iOS-widget
 xcodegen generate
 ```
 
-This reads `project.yml` and creates `Potty.xcodeproj`.
+This reads `project.yml` and creates `PottyTracker.xcodeproj`.
 
 ### 3. Open in Xcode
 
 ```bash
-open Potty.xcodeproj
+open PottyTracker.xcodeproj
 ```
 
 ### 4. Configure signing
 
-1. Select the **Potty** project in the navigator.
+1. Select the **PottyTracker** project in the navigator.
 2. For each target (**Potty** and **PottyWidgetExtension**):
    - Go to **Signing & Capabilities**.
    - Check **Automatically manage signing**.
@@ -60,7 +60,7 @@ open Potty.xcodeproj
 ### 6. Add the widget
 
 1. Long-press on your home screen and tap **+** in the top-left corner.
-2. Search for **Potty**.
+2. Search for **Potty Tracker**.
 3. Choose the small or medium widget and tap **Add Widget**.
 
 ## Project Structure

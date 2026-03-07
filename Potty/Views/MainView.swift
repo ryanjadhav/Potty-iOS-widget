@@ -32,7 +32,7 @@ struct MainView: View {
                     .padding(.bottom, 8)
                 }
             }
-            .navigationTitle("Potty")
+            .navigationTitle("Potty Tracker")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
