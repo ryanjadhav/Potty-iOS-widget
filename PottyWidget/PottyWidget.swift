@@ -8,7 +8,7 @@ struct PottyWidget: Widget {
         StaticConfiguration(kind: kind, provider: PottyTimelineProvider()) { entry in
             PottyWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Potty Timer")
+        .configurationDisplayName("Potty Tracker")
         .description("Track your toddler's potty events.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }

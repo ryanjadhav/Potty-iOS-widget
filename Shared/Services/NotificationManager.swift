@@ -18,7 +18,7 @@ final class NotificationManager {
         center.removePendingNotificationRequests(withIdentifiers: [notificationID])
 
         let content = UNMutableNotificationContent()
-        content.title = "Potty Time!"
+        content.title = "Potty Tracker"
         content.body = "It's been 45 minutes — time for a potty check!"
         content.sound = .default
 
