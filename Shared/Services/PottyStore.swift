@@ -39,6 +39,7 @@ final class PottyStore {
         save(events)
 
         WidgetCenter.shared.reloadAllTimelines()
+        NotificationCenter.default.post(name: Self.didSyncNotification, object: nil)
         NotificationManager.shared.scheduleReminder()
     }
 

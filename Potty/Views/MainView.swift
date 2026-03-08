@@ -4,6 +4,7 @@ struct MainView: View {
     @State private var events: [PottyEvent] = PottyStore.shared.allEvents
     @State private var showHistory = false
     @State private var lastLoggedType: PottyType?
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         NavigationStack {
@@ -53,6 +54,11 @@ struct MainView: View {
             }
             .onReceive(NotificationCenter.default.publisher(for: PottyStore.didSyncNotification)) { _ in
                 refreshEvents()
+            }
+            .onChange(of: scenePhase) { _, newPhase in
+                if newPhase == .active {
+                    refreshEvents()
+                }
             }
         }
     }
