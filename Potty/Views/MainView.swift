@@ -51,6 +51,9 @@ struct MainView: View {
             .onAppear {
                 refreshEvents()
             }
+            .onReceive(NotificationCenter.default.publisher(for: PottyStore.didSyncNotification)) { _ in
+                refreshEvents()
+            }
         }
     }
 
