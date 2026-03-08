@@ -37,7 +37,6 @@ struct MainView: View {
             .navigationBarTitleDisplayMode(.large)
             .toolbarBackground(PottyTheme.background, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
-            .toolbarColorScheme(.light, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
