@@ -6,9 +6,9 @@ enum PottyTheme {
     static let cardBackground = Color.white
     static let peeColor = Color(red: 1.0, green: 0.851, blue: 0.239)         // #FFD93D sunny yellow
     static let poopColor = Color(red: 0.769, green: 0.584, blue: 0.416)      // #C4956A warm brown
-    static let accent = Color(red: 0.722, green: 0.663, blue: 0.788)         // #B8A9C9 soft lavender
-    static let textPrimary = Color(red: 0.2, green: 0.18, blue: 0.22)        // dark plum
-    static let textSecondary = Color(red: 0.55, green: 0.5, blue: 0.58)      // muted plum
+    static let accent = Color(red: 0.42, green: 0.31, blue: 0.69)             // #6B4FB0 deep violet
+    static let textPrimary = Color(red: 0.13, green: 0.11, blue: 0.16)       // near-black plum
+    static let textSecondary = Color(red: 0.38, green: 0.33, blue: 0.43)     // readable dark plum
 
     // MARK: - Typography
     static func rounded(_ style: Font.TextStyle, weight: Font.Weight = .regular) -> Font {
