@@ -35,6 +35,8 @@ struct MainView: View {
             }
             .navigationTitle("Potty Tracker")
             .navigationBarTitleDisplayMode(.large)
+            .toolbarBackground(PottyTheme.background, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
